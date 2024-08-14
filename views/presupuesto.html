@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encuentra viajes a diferentes destinos turísticos al precio más bajo">
+    <meta name="author" content="Tomas Ghizzoni">
+    <title>Viaja Mundo</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Viaja Mundo</h1>
+            <nav>
+                <img src="../images/logo.png" alt="logo" id="logo">
+                <ul>
+                    <li><a href="../index.html">Inicio</a>
+                        <ul class="submenu" id="inicio-submenu">
+                            <li><a href="../#destinos">Nuestros destinos</a></li>
+                            <li><a href="../#clientes">Testimonios de clientes</a></li>
+                            <li><a href="../#consejos">Algunos consejos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="presupuesto.html">Presupuesto</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <a href="#" class="asistente"><img src="../images/asistente.png" alt="asistente_salchicha" class="asistente_salchicha"> <br> <p>¡Woof! Formulario<br>
+            ¡estás muy cerca!</p></a>
+
+            <div class="containerform">
+                <h2>Presupuesto</h2>
+                <form id="presupuesto-form">
+                    <fieldset>
+                        <legend>Datos de contacto</legend>
+                        <div>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" maxlength="15" required pattern="[A-Za-zÁ-ÿ\s]+">
+                        </div>
+                        <div>
+                            <label for="apellidos">Apellidos:</label>
+                            <input type="text" id="apellidos" name="apellidos" maxlength="40" required pattern="[A-Za-zÁ-ÿ\s]+">
+                        </div>
+                        <div>
+                            <label for="telefono">Teléfono de contacto:</label>
+                            <input type="tel" id="telefono" name="telefono" maxlength="9" required pattern="[0-9]+">
+                        </div>
+                        <div>
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Presupuesto</legend>
+                        <div>
+                            <label for="producto">Destino:</label>
+                            <select id="producto" name="producto">
+                                <option value="100">Paris - $100</option>
+                                <option value="150">Roma - $150</option>
+                                <option value="200">Bali - $200</option>
+                                <option value="500">Tokio - $500</option>
+                                <option value="800">Nueva York - $800</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="plazo">Plazo (meses):</label>
+                            <input type="number" id="plazo" name="plazo" min="0" value="0">
+                        </div>
+                        <div>
+                            <label><strong>Extras:</strong></label>
+                            <br>
+                            <input type="checkbox" id="extra1" name="extra1" value="50">
+                            <label for="extra1">Mascota - $50</label><br>
+                            <input type="checkbox" id="extra2" name="extra2" value="75">
+                            <label for="extra2">Equipaje extra - $75</label><br>
+                            <input type="checkbox" id="extra3" name="extra3" value="100">
+                            <label for="extra3">Traslado de aeropuerto a Hotel - $100</label><br>
+                        </div>
+                        <div>
+                            <label for="presupuesto">Presupuesto:</label>
+                            <output id="presupuesto">$0</output>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Condiciones y envío del presupuesto</legend>
+                        <div>
+                            <input type="checkbox" id="condiciones" required>
+                            <label for="condiciones">Acepto las <a href="condiciones.html">condiciones</a> de privacidad</label>
+                        </div>
+                        <div>
+                            <button type="submit">Enviar Presupuesto</button>
+                            <button type="reset">Resetear Formulario</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        © 2024 ViajaMundo.com  todos los derechos reservados<br>
+        Siguenos en nuestras redes:
+        <ul class="redes">
+            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+    <script src="../js/presupuesto.js"></script>
+</body>
+</html>
